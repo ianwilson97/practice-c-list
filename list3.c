@@ -37,9 +37,9 @@ void Print() {
 int main()
 {
     head = NULL; //this is currently an empty list
-    Insert(2, 1);
-    Insert(3, 2);
-    Insert(4, 1);
-    Insert(5, 2)
+    Insert(2, 1); //Inserting 2 at position 1
+    Insert(3, 2); //Inserting 3 at position 2
+    Insert(4, 1); //Inserting 4 at position 1
+    Insert(5, 2) //Inserting 5 at position 2
     return 0;
 }
