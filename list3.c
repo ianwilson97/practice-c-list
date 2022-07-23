@@ -6,7 +6,7 @@ struct Node {
     int data; 
     struct Node *next;
 };
-struct Node* head; //this is the head of the list
+struct Node* head; //this is the head of the list. It is a global variable.
 
 void Insert(int data, int n) {
    struct Node* temp1 = (struct Node*)malloc(sizeof(struct Node*)); //this is the temporary node that is created.
@@ -41,5 +41,6 @@ int main()
     Insert(3, 2); //Inserting 3 at position 2
     Insert(4, 1); //Inserting 4 at position 1
     Insert(5, 2); //Inserting 5 at position 2
+    Print(); //Printing the list
     return 0;
 }
