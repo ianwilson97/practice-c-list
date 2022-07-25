@@ -30,16 +30,16 @@ void Print(struct Node* head) {
 struct Node* Reverse(struct Node* head)
 {
     struct Node* temp, *prev, *next; //temp is the current node, prev is the previous node, next is the next node
-    temp = head;
-    prev = NULL;
+    temp = head; //set temp to the head of the list
+    prev = NULL; //initialize prev to NULL
     while(temp != NULL)
     {
-        next = temp->next; //next is the next node in the list
-        temp->next = prev; //temp->next is the pointer to the next node
-        prev = temp; //prev is the previous node in the list
-        temp = next; //temp is the current node in the list
+        next = temp->next; //this changes the next node to the next node
+        temp->next = prev; //this changes the next node to the previous node
+        prev = temp; //this changes the previous node to the current node
+        temp = next; //this changes the current node to the next node
     }
-    head = prev; //head is the new head of the list
+    head = prev; //this changes the head to the previous node
     return head;
 }
 
