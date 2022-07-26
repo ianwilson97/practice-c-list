@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//printing a linked list in reverse order
+
 struct Node {
     int data;
     struct Node* next;
